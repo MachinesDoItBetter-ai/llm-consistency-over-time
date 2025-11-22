@@ -1,0 +1,14 @@
+Responses get:
++5 pointst for each of the correct words provided
++2 points if the word has the correct maximum score
++1 points if the word has a valid score
+
+5 Points are subtracted if the response format is not word followed by score, with a new line for each new word.
+
+The best 5 words and their maximum and valid scores are:
+
+DEBARK 36pts
+BREAK 32pts
+KEBAR 32pts
+BARKED 32 pts
+BRAKED 32 pts

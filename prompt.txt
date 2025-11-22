@@ -1,0 +1,5 @@
+Can you list the best 5 scrabble words I can make from these letters assuming it is the first move. The word will get double score, and if long enough it will get the double letter bonus on one of the letters. Consider this position and report only the best score.
+
+Do not provide any explanation, nor position, only the list of words and scores, with one word per line followed by its score.
+
+Letters: BADIERK
