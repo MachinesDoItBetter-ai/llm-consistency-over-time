@@ -1,0 +1,78 @@
+	•	The maximum word length is 7 (BADIERK).
+	•	The first move score calculation: (Word Score + 50 for a 7-letter word) * 2 (for placing it on the center star, $\text{D}_W$ bonus).
+	•	The center square (H8) is the $\text{D}_W$ bonus square. The standard setup means this also means the word will get one $\text{D}_W$ bonus.
+	•	The letter values are:
+	◦	$\text{B}=3$, $\text{A}=1$, $\text{D}=2$, $\text{I}=1$, $\text{E}=1$, $\text{R}=1$, $\text{K}=5$
+	◦	Total value of all tiles: $3+1+2+1+1+1+5 = 14$.
+
+
+Finding 7-letter words (Bingos) - Score is $(\text{Word Score} + 50) \times 2$
+
+	•	DARBIKE (not a valid word)
+	•	BADIER K (not a valid word)
+	•	BAKEDIR (not a valid word)
+	•	BIRKADE (not a valid word)
+	•	BRIDA K E (not a valid word)
+	•	DARBIE K (not a valid word)
+	•	ABIDER K (not a valid word)
+	•	BREADIK (not a valid word)
+Let's use an external search for valid 7-letter words (Bingos) from BADIERK:
+The following table shows the top scoring words based on the provided conditions (first move, $\text{D}_W$ on the word, and $\text{D}_L$ on one letter, with a 50-point bonus for a 7-letter word).
+The highest-scoring valid 7-letter word (Bingo) from BADIERK is BARKED (only 6 letters used, no Bingo). There are no 7-letter words from BADIERK in standard Scrabble dictionaries (like CSW or OSPD).
+Therefore, the highest scores will come from 6-letter words, as the $\text{D}_W$ and $\text{D}_L$ bonuses are the most significant factors.
+Word Score Calculation: $(\text{Word Score} + \text{D}_L) \times 2 (\text{D}_W)$
+	•	Letter Values: B=3, A=1, D=2, I=1, E=1, R=1, K=5.
+Word
+Letters Used
+Score Calculation (DL on K)
+Score Calculation (DL on B or D)
+Highest Score
+BAKED
+B A K E D
+$(3+1+10+1+2) \times 2$
+$(6+1+5+1+2) \times 2$
+34
+BRIDE
+B R I D E
+$(6+1+1+2+1) \times 2$
+$(3+1+1+4+1) \times 2$
+22
+BARK
+B A R K
+$(3+1+1+10) \times 2$
+$(6+1+1+5) \times 2$
+30
+BRED
+B R E D
+$(6+1+1+2) \times 2$
+$(3+1+1+4) \times 2$
+20
+DREAM (not possible)
+
+
+
+
+DRIER (not possible)
+
+
+
+
+RIDE
+R I D E
+$(1+1+4+1) \times 2$
+$N/A$
+14
+The question is best interpreted as the word gets the $\text{D}_W$ bonus AND if long enough (which means at least 4 letters on the starting square, $H8$), it will get a $\text{D}_L$ bonus on that letter. Since the center square is a $\text{D}_W$ square, the $\text{D}_L$ bonus must be on another square (like G8, I8, H7, or H9, which are not bonus squares on the first turn). The standard first move is on H8, which is a $\text{D}_W$ square, meaning the word score is doubled. The prompt specifically mentions an additional $\text{D}_L$ if long enough. Since no $\text{D}_L$ squares are adjacent to H8 that would be played on the first turn, I will assume the prompt meant the $\text{D}_L$ applies to one of the letters somewhere in the word, for words 4+ letters long, likely as a proxy for the high-value letter $\text{K}$ being placed on a $\text{D}_W$ square (which doesn't happen on the first move).
+If the word gets the $\text{D}_W$ bonus AND a single $\text{D}_L$ bonus on the highest value letter $\text{K}$:
+Score: $(\text{Base Score} + \text{K} \text{ value}) \times 2$
+	•	BAKED: $3+1+5+1+2 = 12$. $\text{K} \text{ D}_L$ is $5$. Score is $(12+5) \times 2 = 34$.
+	•	BIKER: $3+1+5+1+1 = 11$. $\text{K} \text{ D}_L$ is $5$. Score is $(11+5) \times 2 = 32$.
+	•	BARK: $3+1+1+5 = 10$. $\text{K} \text{ D}_L$ is $5$. Score is $(10+5) \times 2 = 30$.
+	•	BAIRN (not possible)
+	•	BREAD: $3+1+1+1+2 = 8$. $\text{D} \text{ D}_L$ is $2$. Score is $(8+2) \times 2 = 20$.
+The most common interpretation of a high-scoring first move involves maximizing the letter points and using the $\text{D}_W$ bonus. Given the wording, the highest points come from the highest value letter $\text{K}$. I will assume the prompt means the highest possible score from the word, which results in the $\text{D}_L$ on the $\text{K}$ for $\text{BAKED}$.
+BAKED 34
+BIKER 32
+BARK 30
+BRED 20
+RIDE 14

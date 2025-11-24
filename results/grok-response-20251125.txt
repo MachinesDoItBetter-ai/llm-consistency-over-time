@@ -1,0 +1,8 @@
+BARKED 26
+BRAKED 26
+DEBARK 26
+BAKED 24
+BIKED 24
+These are the top 5 Scrabble words from the letters B, A, D, I, E, R, K for the first move, where the word covers the center double word score (DWS) square, doubling the base score.
+BARKED, BRAKED, and DEBARK each have a base score of 13 points (B=3, A=1, R=1, K=5, E=1, D=2), doubled to 26. BAKED and BIKED have a base score of 12 points (B=3, A/I=1, K=5, E=1, D=2), doubled to 24.
+No valid 7-letter words exist from these letters, so no bingo bonus applies. The standard Scrabble board has no double letter score (DLS) squares in the central row (row 8) or column (column H), confirming no additional DLS bonus for the first move.

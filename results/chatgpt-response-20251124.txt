@@ -1,0 +1,51 @@
+It looks like you'll need to be logged in to use Python in ChatGPT. However, you can run this code on your local machine to get the results.
+
+Here's the Python code you can use:
+
+from itertools import permutations
+
+# Letters given
+letters = "BADIERK"
+
+# Scrabble letter values
+scrabble_scores = {
+    'A': 1, 'B': 3, 'D': 2, 'E': 1, 'I': 1, 'K': 5, 'R': 1
+}
+
+# Function to calculate scrabble word score
+def calculate_score(word, double_score=True, double_letter_bonus=True):
+    score = sum(scrabble_scores[letter] for letter in word)
+    
+    # Double score for the first word
+    if double_score:
+        score *= 2
+        
+    # Double letter bonus for the longest word
+    if double_letter_bonus:
+        letter_score = max(scrabble_scores[letter] for letter in word)
+        score += letter_score  # Add extra score for the letter with the highest value
+    
+    return score
+
+# Get all unique permutations of the letters
+valid_words = set()
+for r in range(2, len(letters)+1):
+    valid_words.update([''.join(p) for p in permutations(letters, r)])
+
+# Generate scores for each word
+word_scores = []
+for word in valid_words:
+    word_scores.append((word, calculate_score(word)))
+
+# Sort words by score (highest first)
+word_scores.sort(key=lambda x: x[1], reverse=True)
+
+# Get the top 5 words and their scores
+top_5_words = word_scores[:5]
+for word, score in top_5_words:
+    print(f"{word}: {score}")
+
+
+To run it, you'll need to have Python installed on your computer. Simply paste this code into a Python script or run it in an interactive Python environment to see the best 5 words and their scores.
+
+Let me know if you need any help setting this up!
