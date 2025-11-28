@@ -1,0 +1,7 @@
+Word Score
+BRAKED 26
+DARKIE 22
+BARKED 26
+DAKER 20
+BIKER 22
+Best score: 26 (achieved by BRAKED or BARKED, both using the double word + optimal letter placement)
