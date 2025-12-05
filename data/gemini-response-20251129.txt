@@ -1,0 +1,202 @@
+he user wants the best 5 Scrabble words that can be made from the letters BADIERK on the first move, maximizing the score. The first word played in Scrabble gets a double word score (center square D→W) and if the word is 7 letters long, a 50-point bonus (Scrabble/Bingo). The user's prompt mentions "if long enough it will get the double letter bonus on one of the letters" - this usually refers to the 50-point bonus for using all 7 tiles (a Bingo), which is applied after the score is calculated and doubled. A double letter square on the board would also be included in the calculation. Since this is the first move, the only board bonus is the D→W on the center square, and possibly D→L or T→L squares if the word extends past the center. However, the most significant bonus is the D→W and the 50-point Bingo bonus for a 7-letter word.
+
+Tile values: B: 3 A: 1 D: 2 I: 1 E: 1 R: 1 K: 5 Total sum of values for BADIERK: 3+1+2+1+1+1+5=14.
+
+A 7-letter word (Bingo) would score (14×2)+50=78 if no bonus squares were hit other than the D→W.
+
+Need to find the highest-scoring words using these letters, prioritizing 7-letter words. The highest scoring 7-letter word will likely be the highest overall.
+
+7-letter words (Bingo):
+
+DARKIE (2+1+1+5+1+1+1) - No, letters are BADIERK.
+
+BADIER K - No
+
+BRAID - No
+
+BREAD - No
+
+DAIKER (Scottish dialect for a walk) - No
+
+BADIER + K - No 7-letter word from BADIERK is common.
+
+BREAD + IK - No
+
+Let's assume the words are common English words. The highest potential score comes from a 7-letter word using all the letters (Bingo), which gets a 50-point bonus after doubling. Letters: B(3), A(1), D(2), I(1), E(1), R(1), K(5).
+
+Possible 7-letter words (Bingo):
+
+BADIER (No, K is left)
+
+DABIKER (No)
+
+BRAKED (6 letters)
+
+ABIDER (6 letters)
+
+DRIER (5 letters)
+
+Let's search for actual words. The search results were not able to directly calculate the scores, so I must manually determine the highest scoring words based on the letters BADIERK and Scrabble rules (first move is D→W, high-value letters, and 50-point bonus for 7-letter words).
+
+Letters: B(3), A(1), D(2), I(1), E(1), R(1), K(5).
+
+Tile Values: A=1,I=1,E=1,R=1,D=2,B=3,K=5.
+
+Total Rack Value: 1+1+1+1+2+3+5=14
+
+7-Letter Words (Bingo) Score Calculation: Base score (14) ×2 (Double Word) +50 (Bingo Bonus) =78
+
+No common 7-letter word is formed by BADIERK.
+
+6-Letter Words Score Calculation: The 6-letter word must use the center square (the D→W bonus). To maximize score, the high-value 'K' or 'B' should be placed on a Double Letter (D→L) or Triple Letter (T→L) square if one is reachable. However, for the first move, only the center square (D→W) is guaranteed. The highest scoring 6-letter words will be those that include K(5) or B(3). The highest score will come from placing the K on the D→L at F8 or J8 or H6 or H10. A word can be played starting on H8 (the star) or ending on H8 or spanning H8.
+
+Scenario A: Word spans H8 (6 letters total, one letter on the D→L at F8 or J8 or H6 or H10)
+
+This is not possible for a 6-letter word on the first move, as the D→W is at H8. A 6-letter word played through the D→W would not hit a D→L or T→L without a change in direction or a longer word. The best placement is to use the D→W on the center square.
+
+Scenario B: Word is 6 letters long, using the D→W at H8.
+
+BRAIDED - No
+
+DAIKER (A tramp or vagrant, a walk/stroll - Scottish, in some dictionaries) - D(2),A(1),I(1),K(5),E(1),R(1)
+
+Base Score: 2+1+1+5+1+1=11.
+
+Play DA I KER, with I on H8. 2+1+(1×2)+5+1+1=12. Word score: 12×2=24.
+
+Play DAIKER, with A on H8. 2+(1×2)+1+5+1+1=12. Word score: 12×2=24.
+
+Play D A I K E R, with K on H8. No, K is too far away.
+
+DARBIES - No
+
+BARDIE (Scottish for small Bard) - B(3),A(1),R(1),D(2),I(1),E(1). Left with K(5).
+
+Base Score: 3+1+1+2+1+1=9.
+
+Play BARD I E, with I on H8. 3+1+1+2+(1×2)+1=10. Word score: 10×2=20.
+
+Play BARDIE, with D on H8. 3+1+1+(2×2)+1+1=11. Word score: 11×2=22.
+
+ABIDER (One who abides/dwells) - A(1),B(3),I(1),D(2),E(1),R(1). Left with K(5).
+
+Base Score: 1+3+1+2+1+1=9.
+
+Play A B I D E R, with D on H8. 1+3+1+(2×2)+1+1=11. Word score: 11×2=22.
+
+Play A B I D E R, with B on H8. 1+(3×2)+1+2+1+1=12. Word score: 12×2=24.
+
+BRAKED (Applied a brake) - B(3),R(1),A(1),K(5),E(1),D(2). Left with I(1).
+
+Base Score: 3+1+1+5+1+2=13.
+
+Play B R A K E D, with K on H8. 3+1+1+(5×2)+1+2=18. Word score: 18×2=36.
+
+Play B R A K E D, with B on H8. (3×2)+1+1+5+1+2=16. Word score: 16×2=32.
+
+5-Letter Words Score Calculation:
+
+BRICK - No
+
+BIDAR - No
+
+BAKER - B(3),A(1),K(5),E(1),R(1). Left with I,D.
+
+Base Score: 3+1+5+1+1=11.
+
+Play B A K E R, with K on H8. 3+1+(5×2)+1+1=16. Word score: 16×2=32.
+
+KERB - No
+
+KABIR - No
+
+DABIK - No
+
+BIKER - B(3),I(1),K(5),E(1),R(1). Left with A,D.
+
+Base Score: 3+1+5+1+1=11.
+
+Play B I K E R, with K on H8. 3+1+(5×2)+1+1=16. Word score: 16×2=32.
+
+4-Letter Words Score Calculation:
+
+KIER (Vat for soaking cloth) - K(5),I(1),E(1),R(1). Left with B,A,D.
+
+Base Score: 5+1+1+1=8.
+
+Play K I E R, with K on H8. (5×2)+1+1+1=13. Word score: 13×2=26.
+
+Conclusion: The best words will be 6-letter words that can place the 'K' on the Double Letter square D→L (e.g., J8 or H6) and use the D→W on the center square, or place the 'K' on the D→W itself.
+
+Since the prompt only mentions one of the letters may get a double letter bonus (DL) if the word is long enough (a possible interpretation of "long enough" being 7 letters for the Bingo bonus, where the D→W is already active), I must interpret the highest score.
+
+For a 6-letter word, BRAKED has the highest base value (13).
+
+If BRAKED is played using the D→W only (e.g., K on H8): 3+1+1+(5×2)+1+2=18. Word score: 18×2=36.
+
+If a word is 7 letters long and the first letter is on H8 (D→W) and the fourth letter is on a D→L square, for example: K on H8 (D W) and R on K8 (DL). No, this is not possible as H8 is the only center square.
+
+The best scores are:
+
+BRAKED (K on H8): (3+1+1+5+1+2)×2=36.
+
+KABIR (K on H8): (5+1+3+1+1)×2=22. No, this is 5 letters.
+
+ABIDER (B on H8): (1+3+1+2+1+1)×2=22. No, this is 6 letters.
+
+Let's use a word finder and assume the best possible placement on a first move, which is maximizing the D→W or hitting a D→L as close to H8 as possible. The highest scores usually come from the D→W being the multiplier for the whole word.
+
+Words and scores (assuming K is on H8 - D→W used as D→L for K):
+
+BRAKED: (3+1+1+(5×2)+1+2)=18×2=36.
+
+ABIDER: (1+3+1+2+1+1)=9×2=18.
+
+BAKER: (3+1+5+1+1)=11×2=22.
+
+Words and scores (assuming K is on a D→L at J8 and E is on H8 - D→W):
+
+DARKIE: D(2),A(1),R(1),K(5),I(1),E(1) - No B.
+
+DAIKER: D(2),A(1),I(1),K(5),E(1),R(1) - Left with B(3).
+
+Play D(2),A(1),I(1),K(5×2),E(1),R(1) with E on H8 (D→W). (2+1+1+10+1+1)=16×2=32.
+
+Highest score is BRAKED at 36, if K is on the D→L at G8 or I8 (not D→W on H8) and the D→W is used. A 6-letter word like BRAKED (13 base) can be played as B R A K E D starting at C8, with K on F8 (D→L) and D on H8 (D→W): (3+1+1+5×2+1+2)×2=18×2=36. If BADIER is on C8−H8, I is on F8 (D→L), E is on G8 (D→L), R is on H8 (D→W). This is getting too complex for a simple request. The highest scoring placement of the letters is required.
+
+Assuming the best 5 words and best score based on the highest-value letters being placed on bonus squares.
+
+Word	Letters Used	Letters Left	Base Value	Best Score Placement	Score Calculation	Final Score
+BRAKED	B(3), R(1), A(1), K(5), E(1), D(2)	I(1)	13	K on D→L (F8 or J8) and D on H8 (D→W).	(3+1+1+10+1+2)×2	36
+KABIR	K(5), A(1), B(3), I(1), R(1)	D(2), E(1)	11	K on H8 (D→W as D→L).	(10+1+3+1+1)×2	32
+BAKER	B(3), A(1), K(5), E(1), R(1)	D(2), I(1)	11	K on H8 (D→W as D→L).	(3+1+10+1+1)×2	32
+BIKER	B(3), I(1), K(5), E(1), R(1)	A(1), D(2)	11	K on H8 (D→W as D→L).	(3+1+10+1+1)×2	32
+KIER	K(5), I(1), E(1), R(1)	B(3), A(1), D(2)	8	K on H8 (D→W as D→L).	(10+1+1+1)×2	26
+
+Export to Sheets
+
+The instructions state: "The word will get double score, and if long enough it will get the double letter bonus on one of the letters." This strongly suggests the word should be placed to use both the D→W at H8 and one of the D→L squares (F8, J8, H6, H10).
+
+BRAKED (6 letters) starting at C8, with K on F8 (D→L) and D on H8 (D→W): (3+1+1+(5×2)+1+2)×2=36.
+
+BAKED (5 letters) B(3),A(1),K(5),E(1),D(2) at D8, with K on F8 (D→L) and D on H8 (D→W): (3+1+(5×2)+1+2)×2=34.
+
+BRED B(3),R(1),E(1),D(2) at E8, with R on F8 (D→L) and D on H8 (D→W): (3+(1×2)+1+2)×2=16.
+
+The interpretation that the D→L is hit and the D→W is applied to the word is the standard for Scrabble.
+
+BRAKED: B(3)+R(1)+A(1)+K(5×2)+E(1)+D(2)=18×2=36.
+
+BAKED: B(3)+A(1)+K(5×2)+E(1)+D(2)=17×2=34.
+
+KABIR: K(5×2)+A(1)+B(3)+I(1)+R(1)=16×2=32.
+
+BIKER: B(3)+I(1)+K(5×2)+E(1)+R(1)=15×2=30.
+
+BREAD: B(3)+R(1)+E(1)+A(1)+D(2) No K. 3+1+1+1+2=8×2=16.
+
+KIER: K(5×2)+I(1)+E(1)+R(1)=13×2=26.
+
+Highest five unique scores (placing K on a D→L is highest value play): BRAKED: 36 BAKED: 34 KABIR: 32 BIKER: 30 KIER: 26
+
+BRAKED 36 BAKED 34 KABIR 32 BIKER 30 KIER 26
